@@ -4,12 +4,9 @@ influxdb:
   ports:
     - "8083:8083"
     - "8086:8086"
-    - "8090:8090"
   env_file:
     - 'env.influxdb'
   volumes:
-    # Data persistency
-    # sudo mkdir -p $PWD/influxdb
     - $PWD/influxdb:/var/lib/influxdb
 
 grafana:
@@ -22,6 +19,4 @@ grafana:
   links:
     - influxdb
   volumes:
-    # Data persistency
-    # sudo mkdir -p $PWD/grafana
     - $PWD/grafana:/var/lib/grafana

@@ -21,7 +21,11 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 ## 3. Instrucciones de uso
 
 1. Descargue el repositorio a una carpeta de su computadora utilizando el comando `git clone`.
-2. Cámbiese a la carpeta del proyecto.
+2. Cámbiese a la carpeta del proyecto y cree las carpetas necesarias:
+
+`mkdir grafana`
+`mkdir influxdb`
+
 3. Ejecute el comando:
 
 `docker-compose up -d`

@@ -35,7 +35,7 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 
 6. Inicie un contenedor a partir de la imagen generada:
 
-`docker run --name app-web -p 80:80 -d nodejs:webinar`
+`docker run --name app-web -p 80:80 -d nodejs:webinar`
  
 7. Verifique que el contendor se encuentra en ejecución:
 
@@ -76,7 +76,7 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 
 ## 4. Recursos
 
-Para aprender a desarrollar una aplicación web con Node.js, favor de referirse a la documentación oficial disponible en [Node.js Docs](https://nodejs.org/en/docs/) o a los diferentes cursos disponibles en plataformas como [Cousera](https://www.coursera.org/courses?languages=en&query=node.js), [Udemy](https://www.udemy.com/courses/search/?q=node.js&src=ukw), entre otros.  
+Para aprender a desarrollar una aplicación web con Node.js, favor de referirse a la documentación oficial disponible en [Node.js Docs](https://nodejs.org/en/docs/) o a los diferentes cursos disponibles en plataformas como [Coursera](https://www.coursera.org/courses?languages=en&query=node.js), [Udemy](https://www.udemy.com/courses/search/?q=node.js&src=ukw), entre otros.  
 
 Para aprender a trabajar con la línea de comandos de `docker`, favor de referirse a la documentación oficial disponible en [Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/).
 

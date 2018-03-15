@@ -57,7 +57,7 @@ El nuevo valor del `número de instancias` debe ser igual a la suma de los conte
 
 ## 4. Recursos
 
-Para aprender a desarrollar una aplicación web con Node.js, favor de referirse a la documentación oficial disponible en [Node.js Docs](https://nodejs.org/en/docs/) o a los diferentes cursos disponibles en plataformas como [Cousera](https://www.coursera.org/courses?languages=en&query=node.js), [Udemy](https://www.udemy.com/courses/search/?q=node.js&src=ukw), entre otros.  
+Para aprender a desarrollar una aplicación web con Node.js, favor de referirse a la documentación oficial disponible en [Node.js Docs](https://nodejs.org/en/docs/) o a los diferentes cursos disponibles en plataformas como [Coursera](https://www.coursera.org/courses?languages=en&query=node.js), [Udemy](https://www.udemy.com/courses/search/?q=node.js&src=ukw), entre otros.  
 
 Para aprender a trabajar con el balanceador HAProxy,  favor de referirse a la documentación oficial disponible en [HAProxy Docs](http://www.haproxy.org/#docs).
 

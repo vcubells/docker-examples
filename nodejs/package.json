@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-webinar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Ejemplo de una app web con Node.js y Docker",
+  "author": "Vicente Cubells",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "latest"
+  },
+  "private": true
+}

@@ -5,5 +5,6 @@ Este repositorio contiene varios ejemplos de como utilizar contenedores Docker p
 ## Listado de ejemplos
 
 - [Aplicación simple en Node.js](nodejs)
+- [Aplicación simple con Flask API y MongoDB](flask-mongo)
 - [Aplicación compuesta por un balanceador HAProxy y un conjunto de servidores de *backend* (aplicación Node.js)](haproxy-nodejs)
 - [Aplicación compuesta por una base de datos de InfluxDB y la herramienta de visualización Grafana](grafana-influxdb)

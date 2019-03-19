@@ -183,21 +183,28 @@ rs.initiate(config)
 
 3. Adicione los Shards al clúster
 
-`sh.addShard( "rsShard1/mongo-shard11:27018")`
-
-`sh.addShard( "rsShard2/mongo-shard21:27018")`
+```js
+sh.addShard( "rsShard1/mongo-shard11:27018")
+sh.addShard( "rsShard2/mongo-shard21:27018")
+```
 
 4. Habilite el *sharding* para una base de datos
 
-`sh.enableSharding("mydbname")`
+```js
+sh.enableSharding("mydbname")
+```
 
 5. Habilite el *sharding* en una colección
 
-Por rango: `sh.shardCollection("mydbname.mycollection",  { "mykey" : 1 } )`
+Por rango: 
+```js
+sh.shardCollection("mydbname.mycollection",  { "mykey" : 1 } )
+```
 
-o
-
-Por hash: `sh.shardCollection("shdb.data", { "mykey" : "hashed" } )`
+o por hash: 
+```js
+sh.shardCollection("shdb.data", { "mykey" : "hashed" } )
+```
 
 
 ## 7. Monitorear el estado del clúster
@@ -241,7 +248,9 @@ bulk.execute();
 
 2. Divida los datos entre *chunks*
 
-`sh.splitFind( "mydbname.mycollection", { "number": 4000 } )`
+```js
+sh.splitFind( "mydbname.mycollection", { "number": 4000 } )
+```
 
 * En caso de insertar los datos antes de habilitar el *sharding*, ejecute lo siguiente
 

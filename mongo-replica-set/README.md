@@ -58,15 +58,22 @@ config = {
 
 4. Compruebe el estado del ReplicaSet
 
-`rs.status()`
+```js
+rs.status()
+````
+
 
 5. Determine si el nodo en el cual está posicionado es el `master`:
 
-`rs.isMaster()`
+```js
+rs.isMaster()
+```
 
 6. Para habilitar los nodos secundarios para lectura, conéctese a cada nodo y ejecute el comando:
 
-`rs.slaveOk()`
+```js
+rs.slaveOk()
+``` 
 
 
 ## 4. Adicionar otros tipos de nodos
@@ -83,7 +90,9 @@ config = {
 
 3. Adicione el nuevo nodo al ReplicaSet
 
-`rs.add( { host: "mongo-node4:27017", priority: 0, votes: 0 } )`
+```js
+rs.add( { host: "mongo-node4:27017", priority: 0, votes: 0 } )
+```
 
 ### 4.2 Adicionar un árbitro
 
@@ -97,7 +106,9 @@ config = {
 
 3. Adicione el nuevo nodo al ReplicaSet
 
-`rs.addArb("mongo-arb:27017")`
+```js
+rs.addArb("mongo-arb:27017")
+```
 
 
 ## 5. Reconfigurar los nodos
@@ -108,15 +119,21 @@ config = {
 
 2. Obtenga la configuración actual
 
-`cfg = rs.conf();`
+```js
+cfg = rs.conf();
+```
 
 3. Modifique la configuración
 
-`cfg.members[1].priority = 2;`
+```js
+cfg.members[1].priority = 2;
+```
 
 4. Reconfigure el ReplicaSet
 
-`rs.reconfig(cfg);`
+```js
+rs.reconfig(cfg);
+```
 
 
 ## 6. Eliminar nodos del ReplicaSet
@@ -127,11 +144,15 @@ config = {
 
 2. Detenga el servicio
 
-`db.shutdownServer()`
+```js
+db.shutdownServer()
+```
 
 3. Elimine el nodo
 
-`rs.remove("mongo-node3")`
+```js
+rs.remove("mongo-node3")
+```
 
 ## 7. Forzar una votación
 
@@ -141,7 +162,9 @@ config = {
 
 2. Fuerce que deje de ser el primario
 
-`rs.stepDown()`
+```js
+rs.stepDown()
+```
 
 
 ## 8. Obtener información del Oplog
@@ -152,8 +175,10 @@ config = {
 
 2. Ejecute los comandos siguientes
 
-`rs.printReplicationInfo()`
-`rs.printSlaveReplicationInfo()`
+```js
+rs.printReplicationInfo()
+rs.printSlaveReplicationInfo()
+```
 
 
 ## 9. Terminar el ReplicaSet y eliminar los contenedores

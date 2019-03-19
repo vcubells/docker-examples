@@ -52,11 +52,13 @@ A continuación se describen los archivos y carpetas que forman parte del proyec
 10. Detenga los contenedores:
 
 `docker stop app`
+
 `docker stop mongo-server`
 
 11. Elimine los contenedores:
 
 `docker rm app`
+
 `docker rm mongo-server`
 
 15. Elimine la imagen en caso de no requerirla:

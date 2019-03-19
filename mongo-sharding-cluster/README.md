@@ -37,7 +37,7 @@ En este ejemplo se muestra como iniciar un **Sharding Cluster** de [MongoDB](htt
 
 4. Inicialice el ReplicaSet de configuración
 
-```json
+```js
 config = {
       "_id" : "rsConfig",
       "configsvr": true,
@@ -89,7 +89,7 @@ rs.initiate(config)
 
 4. Inicialice el ReplicaSet del Shard 1
 
-```json
+```js
 config = {
       "_id" : "rsShard1",
       "members" : [
@@ -140,7 +140,7 @@ rs.initiate(config)
 
 4. Inicialice el ReplicaSet del Shard 1
 
-```json
+```js
 config = {
       "_id" : "rsShard2",
       "members" : [
@@ -203,7 +203,7 @@ Por hash: `sh.shardCollection("shdb.data", { "mykey" : "hashed" } )`
 ## 7. Monitorear el estado del clúster
 
 1. Ver el estado del *sharding* cluster
-```json
+```js
 use mydbname
 sh.status()
 db.printShardingStatus() 
@@ -211,14 +211,14 @@ db.printShardingStatus()
 
 2. Ver las bases de datos con *sharding*
 
-```json
+```js
 use config
 db.databases.find( { "partitioned": true } )
 ````
 
 3. Ver la lista de *shards*
 
-```json
+```js
 use admin
 db.adminCommand( { listShards : 1 } )
 ```
@@ -226,7 +226,7 @@ db.adminCommand( { listShards : 1 } )
 ## 8. Insertar datos en el cluster
 
 1. Inserte un conjunto de registros 
-```json
+```js
 use mydbname
 var bulk = db.mycollection.initializeUnorderedBulkOp();
 people = ["Marc", "Bill", "George", "Eliot", "Matt", "Trey", "Tracy", "Greg", "Steve", "Kristina", "Katie", "Jeff"];
@@ -245,7 +245,7 @@ bulk.execute();
 
 * En caso de insertar los datos antes de habilitar el *sharding*, ejecute lo siguiente
 
-```json
+```js
 sh.enableSharding( "mydbname" )
 db.data.createIndex( { number : 1 } )
 sh.shardCollection( "mydbname.mycollection", { "number" : 1 } )
@@ -253,7 +253,7 @@ sh.shardCollection( "mydbname.mycollection", { "number" : 1 } )
 
 ## 9. Eliminar un *shard*
 
-```json
+```js
 use admin
 db.adminCommand( { removeShard: "<shard_name>" } )
 ```

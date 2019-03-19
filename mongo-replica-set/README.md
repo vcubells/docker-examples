@@ -34,7 +34,7 @@ En este ejemplo se muestra como iniciar un ReplicaSet de [MongoDB](https://www.m
 
 3. Inicialice el ReplicaSet
 
-```json
+```js
 config = {
       "_id" : "rs0",
       "members" : [

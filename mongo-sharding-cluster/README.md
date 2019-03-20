@@ -175,7 +175,7 @@ rs.initiate(config)
 
 1. Cree un contenedor para el router
 
-`docker run  --name mongo-router -d --net mongo-sh mongo  mongos --configdb rsConfig/mongo-config1:27019,mongo-config2:27019,mongo-config3:27019`
+`docker run  --name mongo-router -d --net mongo-sh mongo  mongos --configdb rsConfig/mongo-config1:27019,mongo-config2:27019,mongo-config3:27019 --bind_ip_all`
 
 2. Conéctese al router
 

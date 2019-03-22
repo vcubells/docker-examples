@@ -19,7 +19,7 @@ En este ejemplo se muestra como iniciar un *Causal Cluster* de [Neo4j](https://n
 
 *Opcional*: Instale los [algoritmos](https://neo4j.com/docs/graph-algorithms/current/)
 
-4. Cree una caroeta 
+4. Cree una carpeta 
 
 `mkdir -p $HOME/neo4j/plugins`
 

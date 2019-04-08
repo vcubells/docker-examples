@@ -45,39 +45,41 @@ En este ejemplo se muestra como iniciar [InfluxDB](https://www.influxdata.com/ti
 
 2. Ejecute las siguientes sentencias
 
-`USE NOAA_water_database`
+```sql 
+USE NOAA_water_database
 
-`SHOW measurements`
+SHOW measurements
 
-`SHOW SERIES`
+SHOW SERIES
 
-`SHOW TAG KEYS`
+SHOW TAG KEYS
 
-`SHOW TAG VALUES WITH KEY = "randtag"`
+SHOW TAG VALUES WITH KEY = "randtag"
 
-`SHOW FIELD KEYS`
+SHOW FIELD KEYS
 
-`SELECT * FROM "h2o_feet" LIMIT 10`
+SELECT * FROM "h2o_feet" LIMIT 10
 
-`SELECT "level description","location","water_level" FROM "h2o_feet" LIMIT 10`
+SELECT "level description","location","water_level" FROM "h2o_feet" LIMIT 10
 
-`SELECT *::field FROM "h2o_feet"`
+SELECT *::field FROM "h2o_feet"
 
-`SELECT ("water_level" * 2) + 4, "water_level" from "h2o_feet" LIMIT 10`
+SELECT ("water_level" * 2) + 4, "water_level" from "h2o_feet" LIMIT 10
 
-`SELECT * FROM "h2o_feet","h2o_pH" LIMIT 10`
+SELECT * FROM "h2o_feet","h2o_pH" LIMIT 10
 
-`SELECT COUNT("water_level") FROM h2o_feet`
+SELECT COUNT("water_level") FROM h2o_feet
 
-`SELECT * FROM "h2o_feet" WHERE time > now() - 7d`
+SELECT * FROM "h2o_feet" WHERE time > now() - 7d
 
-`SELECT * FROM "h2o_feet" WHERE "water_level" > 8`
+SELECT * FROM "h2o_feet" WHERE "water_level" > 8
 
-`SELECT MEAN("water_level") FROM "h2o_feet" GROUP BY "location"`
+SELECT MEAN("water_level") FROM "h2o_feet" GROUP BY "location"
 
-`SELECT COUNT("water_level") FROM "h2o_feet" WHERE "location"='coyote_creek' AND time >= '2015-08-18T00:00:00Z' AND time <= '2015-08-18T00:30:00Z' GROUP BY time(12m)`
+SELECT COUNT("water_level") FROM "h2o_feet" WHERE "location"='coyote_creek' AND time >= '2015-08-18T00:00:00Z' AND time <= '2015-08-18T00:30:00Z' GROUP BY time(12m)
 
-`SELECT "water_level" FROM "h2o_feet" WHERE "location" = 'santa_monica' ORDER BY time DESC`
+SELECT "water_level" FROM "h2o_feet" WHERE "location" = 'santa_monica' ORDER BY time DESC
+```
 
 ## 5. Visualizar los datos con Grafana
 

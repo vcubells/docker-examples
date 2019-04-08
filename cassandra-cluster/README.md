@@ -47,7 +47,7 @@ En este ejemplo se muestra como iniciar un clúster de [Cassandra](http://cassan
 
 7. Crear un KEYSPACE con replicación
 
-```
+```sql 
 CREATE KEYSPACE testkeyspace
 WITH replication = {
 'class' : 'NetworkTopologyStrategy',
@@ -58,7 +58,7 @@ WITH replication = {
 
 8. Cree una tabla
 
-```
+```sql 
 CREATE TABLE testkeyspace.mytable (
 	id int primary key,
 	name text

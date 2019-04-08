@@ -1,4 +1,4 @@
-# Ejemplo de inciar Cassandra en un contenedor de Docker
+# Ejemplo de iniciar Cassandra en un contenedor de Docker
 
 En este ejemplo se muestra como iniciar [Cassandra](http://cassandra.apache.org/) en un contenedor.
 

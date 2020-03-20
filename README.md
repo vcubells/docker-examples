@@ -11,6 +11,11 @@ Este repositorio contiene varios ejemplos de como utilizar contenedores Docker p
 
 ## Listado de bases de datos
 
+- [IBM DB2](ibm-db2-express-c)
 - [MongoDB ReplicaSet](mongo-replica-set)
 - [MongoDB Sharding Cluster](mongo-sharding-cluster)
 - [Neo4j Causal Cluster](neo4j-cluster)
+- [Cassandra](cassandra)
+- [Cassandra Cluster](cassandra-cluster)
+- [InfluxDB](influxdb)
+- [VoltDB Clúster](voltdb-cluster)

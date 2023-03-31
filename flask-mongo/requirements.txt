@@ -1,6 +1,6 @@
 flask==1.0.2
 flask-api==1.0
 pymongo==3.6.1
-redis==2.10.6
+redis==4.4.4
 gunicorn==19.9.0
 python-dotenv
